@@ -1,9 +1,9 @@
 export class Data {
-    cards: Card[] = [{name: 'Card1', colorB: '#9f9fff'}]
+    cards: Card[] = [{name: 'Card1', color: '#9f9fff', colorB: 'blue'}]
 
-    getStyle(cardName: string): string {
-        let color = this.cards.find(e => e.name == cardName)?.colorB
-        return color ? color : ''
+    getCard(cardName: string): Card | undefined {
+        let card = this.cards.find(e => e.name == cardName)
+        return card 
         
 
     }
@@ -11,5 +11,6 @@ export class Data {
 
 export interface Card {
     name: string;
+    color: string
     colorB: string
 }
