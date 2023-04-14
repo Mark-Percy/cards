@@ -1,0 +1,11 @@
+.card {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pane {
+    height: 70vh;
+    border: black solid 1px;
+    aspect-ratio: 1; 
+}
